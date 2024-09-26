@@ -1,0 +1,103 @@
+.modalProduct{
+    position: fixed;
+
+    .overLayProduct{
+        width: 100vw;
+        height: 100vh;
+        .overLayContainer{
+            width: 100%;
+            height: 80%;
+            position: relative;
+
+            #backHome{
+                background-color: $brand-color;
+                color: $bg-color;
+                border-radius: 50%;
+                padding: 7px;
+                margin: 10px 0;
+                cursor: pointer;
+            }
+            img{
+                width: 100%;
+                height: 40%;
+                margin-bottom: 20px;
+                object-fit: cover;
+            }
+            h1{
+                font-size: 4rem;
+                margin-bottom: 10px;
+            }
+            .rangeAndCount{
+                @include flex(row,space-between,center,10rem);
+                margin: 10px 0;
+                flex-wrap: wrap;
+                .range{
+                    flex-grow: 1;
+                    width: 25%;
+                    #rangeInput{
+                        width: 100%;
+                    }
+                    .mild{
+                    }
+                    .hot{
+
+                    }
+                }
+                .portion{
+                    flex-grow: 1;
+                    width: 5%;
+                    @include flex(row,space-between,center,0);
+                    font-size: larger;
+                    #minusBtn{
+
+                    }
+                    #portionCount{
+
+                    }
+                    #plusBtn{
+
+                    }
+                }
+            }
+            .przAndAdd{
+                @include flex(row,space-around,center,0);
+                margin-top: 30px;
+                font-size: 2rem;
+                .price{
+                    background-color: red;
+                    color: $bg-color;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                }
+                .addToCard{
+                    background-color: $brand-color;
+                    color: $bg-color;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    .reviewContainer{
+        width: 80%;
+        @include flex(row,space-between,center,0);
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $brand-color;
+        color: $bg-color;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        .countInReview{
+            background-color: $bg-color;
+            color: $brand-color;
+            border-radius: 100%;
+            text-align: center;
+            padding: 4px;
+            font-weight: bold;
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+.page3Container{
+    display: none;
+    .page3{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .bottom-nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(255, 94, 0, 793);
+        padding: 10px;
+        border-top: 1px solid #ccc;
+
+        i{
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+   
+}

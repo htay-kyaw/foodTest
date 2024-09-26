@@ -1,0 +1,35 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: $body-font-size;
+    color: $brand-color;
+    background-color: $bg-color;
+}
+img,video{
+    width: 100%;
+    display: flex;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $brand-color;
+}
+button{
+    border: none;
+    width: 70%;
+    padding: 25px 0;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    cursor:  pointer;
+}
+i{
+    cursor: pointer;
+}

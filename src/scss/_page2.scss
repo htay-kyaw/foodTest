@@ -1,0 +1,35 @@
+.pagesContainer{
+    #page2{
+        .page2Container{
+            @include flex(column,center,center,0);
+            .page2Img{
+                width: 30%;
+                height: 30%;
+                margin-top: 5%;
+            }
+            h1{
+                font-size: 4rem;
+                color: rgb(255, 128, 0);
+                padding: 2%;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .pagesContainer{
+        #page2{
+            .page2Container{
+                .page2Img{
+                    width: 70%;
+                    height: 70%;
+                    margin-top: 10%;
+                }
+                h1{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}

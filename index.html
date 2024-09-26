@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="pagesContainer">
+      <div class="page" id="page1">
+        <div class="videoContainer">
+          <video src="" class="video"></video>
+          <div class="backAndForward">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="plAndPaAndPro">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-pause"></i>
+            <div id="progessBar">
+              <div id="currentProgess"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page2">
+        <div class="page2Container">
+          <div class="page2Img">
+            <img src="content/photo/food.png" alt="" />
+          </div>
+          <h1>ORDER FOOD YOU LIKE</h1>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        </div>
+      </div>
+      <div class="page" id="page3">
+        <div class="page3Container">
+          <div class="page3Img">
+            <img src="content/photo/Scooter.png" alt="" />
+          </div>
+          <h1>DELIVER TO YOUR HOME</h1>
+          <h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
+            et.
+          </h3>
+        </div>
+      </div>
+      <div class="page container" id="page4">
+        <div class="page4Container">
+          <div class="signUpContainer">
+            <h1>Create New Account</h1>
+            <form id="signUpForm">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" minlength="5" placeholder="less 5 character.." title="Name must be at least 5 characters" required />
+
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" id="phone" placeholder="number...."pattern="\d*"  title="please enter number only" required/>
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="@gmail.com..."/>
+
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password" minlength="6" placeholder="less 6 character..." title="Password must be at least 6 characters long" required/>
+
+              <button type="submit">Sign Up</button>
+            
+              </div>
+            </form>
+          </div>
+        </div>
+
+      <div class="dropContainer">
+        <div class="drop" id="drop1"></div>
+        <div class="drop" id="drop2"></div>
+        <div class="drop" id="drop3"></div>
+        <div class="drop" id="drop4"></div>
+      </div>
+
+      <div class="buttonContainer">
+        <button id="next">NEXT</button>
+        <button id="skip">SKIP</button>
+      </div>
+    </div>
+    <div class="welcomeContainer"></div>
+
+    <div class="page3Container">
+      <div class="page3 active" id="homePageContainer">
+        <div class="homePage">
+          <div class="container">
+            <div class="homePageLogo d-flex justify-content-between align-items-center">
+              <div>
+                <h1>Foodgo</h1>
+                <h3>Order your favourite food!</h3>
+              </div>
+              <img src="content/photo/foodLogo.png" alt="">
+            </div>
+  
+            <div class="searchBar" id="searchBar">
+              <input type="text" placeholder="Search..." id="searchInput" />
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="searchListContainer"> </div>
+            <div class="product-grid"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page3" id="profileContainer">
+      </div>
+      <div class="page3" id="favoriteContainer">  </div>
+      <div class="page3" id="orderSummaryContainer">
+
+      <div class="total"></div></div>
+
+      <div class="bottom-nav">
+        <i class="fas fa-home" onclick="navigateTo('homePageContainer')"></i>
+        <i class="fas fa-user" onclick="navigateTo('profileContainer')"></i>
+        <i class="fas fa-heart" id="favoriteNav" onclick="navigateTo('favoriteContainer')"></i>
+        <i class="fa-solid fa-list" id="orderSummary" onclick="navigateTo('orderSummaryContainer')"></i>
+      </div>
+    </div>
+    <div class="modalProduct"> <div class="overLayReview"></div> </div>
+    <div class="logIn"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

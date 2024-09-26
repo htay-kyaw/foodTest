@@ -1,0 +1,24 @@
+.page3Container{
+    #profileContainer{
+        position: relative;
+        .profile{
+            @include flex(column,center,space-between,0);
+            h1{
+                font-size: large;
+                font-weight: bold;
+                text-align: center;
+                margin: 30px;
+            }
+            .nameInPro,.emailInPro,.numInPro{
+                @include flex(row,space-between,center,0);
+                border: 1px solid $brand-color;
+                width: 80%;
+                margin: 20px auto;
+                padding: 10px;
+                border-radius: 10px;
+
+            }
+
+        }
+    }
+}
